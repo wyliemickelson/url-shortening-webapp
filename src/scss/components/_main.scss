@@ -1,0 +1,76 @@
+@use "./../config" as *;
+
+.main {
+  text-align: center;
+  padding-bottom: 4rem;
+
+  .main_header {
+    margin-bottom: 5rem;
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .shortener {
+    position: relative;
+    top: -3.75rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $clr-prim-dark;
+    background-image: url('/src/images/bg-shorten-mobile.svg');
+
+    * {
+      border-radius: 0.5rem;
+      border: none;
+    }
+
+    input {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .card + .card {
+    margin-top: 5rem;
+  }
+  .card {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0 1.8rem 1.8rem 1.8rem;
+
+    .img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: -38px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 5rem;
+      background-color: $clr-prim-dark;
+      width: 76px;
+      height: 76px;
+      padding-bottom: 0;
+
+      img {
+        max-width: 2rem;
+      }
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+     p {
+       font-size: 0.8rem;
+     }
+  }
+}

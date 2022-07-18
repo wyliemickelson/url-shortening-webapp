@@ -1,0 +1,60 @@
+@use 'config' as *;
+
+html {
+  font-size: $font-size-default;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  font-family: $ff-prim;
+  color: $clr-nt-200;
+}
+
+body {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: $clr-nt-800;
+  line-height: 1.1;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: white;
+  border: none;
+}
+
+.bg-almost-white {
+  background-color: $clr-nt-100;
+}
+
+.bg-dark {
+  background-color: $clr-prim-dark;
+}
+
+.bg-purple {
+  background-color: $clr-sec;
+}
+
+.middle {
+  padding: 0 5%;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  border-radius: 5rem;
+  font-weight: 700;
+  padding: 0.5rem 2rem;
+  color: $clr-nt-100;
+  background-color: $clr-prim-light;
+}
