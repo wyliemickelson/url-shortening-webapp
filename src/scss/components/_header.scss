@@ -1,3 +1,5 @@
+@use '/src/scss/config' as *;
+
 .header {
   margin-top: 2rem;
   margin-bottom: 7rem;
@@ -8,6 +10,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .nav_links {
+      font-weight: 700;
+    }
+
+    .nav_flex {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .btn--login {
+      background-color: white;
+      color: $clr-nt-200;
+    }
+
+    button:hover {
+      filter: brightness(90%);
+      cursor: pointer;
+      color: $clr-prim-dark;
+    }
 
     .nav_links, .nav_account {
       display: none;

@@ -1,7 +1,16 @@
+@use '/src/scss/config' as *;
+
 @media (min-width: 950px) {
 
   html {
     font-size: 1.1rem;
+  }
+
+  .header .hero,
+  .main .shortener,
+  .main .stat_content {
+    max-width: 1000px;
+    margin-inline: auto;
   }
 
   .middle {
@@ -15,27 +24,16 @@
     .navbar {
       gap: 2rem;
 
-      .nav_links, .nav_account {
+      .nav_links{
+        display: flex;
+      }
+
+      .nav_account {
         display: initial;
       }
-
-      .nav_links {
-        font-weight: 700;
-      }
-
-      .nav_flex {
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-      }
-
+      
       .navbar_ham {
         display: none;
-      }
-
-      .btn--login {
-        background-color: white;
-        color: inherit;
       }
     }
 
