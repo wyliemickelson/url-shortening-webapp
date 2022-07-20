@@ -37,9 +37,6 @@
     }
   }
 
-  .card + .card {
-    margin-top: 5rem;
-  }
   .card {
     background-color: white;
     border-radius: 0.5rem;
@@ -73,4 +70,8 @@
        font-size: 0.8rem;
      }
   }
+}
+
+.card + .card {
+  margin-top: 5rem;
 }

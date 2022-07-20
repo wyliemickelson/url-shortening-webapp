@@ -8,6 +8,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .nav_links, .nav_account {
+      display: none;
+    }
   }
 
   .navbar_ham {
@@ -16,6 +20,12 @@
 
   .hero {
     margin: 2rem 0;
+
+    .hero_img {
+      width: 500px;
+      min-width: 475px;
+      overflow: hidden;
+    }
 
     .hero_content {
       margin-top: 1.5rem;

@@ -12,6 +12,8 @@
 
   .footer_cta {
     background-color: $clr-prim-dark;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url("/src/images/bg-boost-mobile.svg");
     padding: 4rem 1rem;
 
