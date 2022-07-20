@@ -32,8 +32,13 @@
     }
 
     input {
+      color: $clr-nt-800;
       padding: 0.5rem 1rem;
       font-size: 0.8rem;
+    }
+
+    input:focus {
+      outline: 2px solid $clr-prim-light;
     }
   }
 

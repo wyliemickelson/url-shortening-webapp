@@ -6,6 +6,12 @@
     font-size: 1.1rem;
   }
 
+  .link_container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
   .header .hero,
   .main .shortener,
   .main .stat_content {

@@ -52,8 +52,20 @@
 
     <main class="main bg-almost-white middle">
       <section class="shortener">
-        <input type="text" placeholder="Shorten a link here..." />
-        <button class="btn">Shorten it!</button>
+        <input
+          id="shortenerInput"
+          type="text"
+          placeholder="Shorten a link here..."
+        />
+        <button id="shortenerBtn" class="btn">Shorten it!</button>
+      </section>
+
+      <section id="createdLinks" class="created-links">
+        <div class="link_container">
+          <p class="link link--given">https://www.Frontendmentor.io</p>
+          <a class="link link--created">https://www.rel.ink/asdf</a>
+          <button class="btn">Copy</button>
+        </div>
       </section>
 
       <div class="main_header">
