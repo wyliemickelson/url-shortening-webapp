@@ -76,12 +76,16 @@
     .shortener {
       top: -3rem;
       flex-direction: row;
-      justify-items: stretch;
+      align-items: center;
       padding: 2rem;
       background-image: url('/src/images/bg-shorten-desktop.svg');
 
       input {
         flex: 1;
+      }
+
+      button {
+        order: 0;
       }
 
     }

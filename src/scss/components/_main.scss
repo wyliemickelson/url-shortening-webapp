@@ -17,7 +17,9 @@
     position: relative;
     top: -3.75rem;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-between;
     padding: 1rem;
     gap: 1rem;
     border-radius: 0.5rem;
@@ -39,6 +41,22 @@
 
     input:focus {
       outline: 2px solid $clr-prim-light;
+    }
+
+    button {
+      order: 1;
+    }
+
+    .invalid_input, .invalid_input:focus {
+      outline: 2px solid $clr-sec;
+    }
+
+    .invalid_text {
+      color: $clr-sec;
+      font-style: italic;
+      font-size: 0.7rem;
+      text-align: left;
+      align-self: left;
     }
   }
 

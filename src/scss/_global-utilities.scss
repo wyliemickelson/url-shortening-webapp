@@ -47,6 +47,14 @@ a:hover {
   cursor: pointer;
 }
 
+.btn {
+  border-radius: 5rem;
+  font-weight: 700;
+  padding: 0.5rem 2rem;
+  color: $clr-nt-100;
+  background-color: $clr-prim-light;
+}
+
 .bg-almost-white {
   background-color: $clr-nt-100;
 }
@@ -67,10 +75,10 @@ a:hover {
   display: none;
 }
 
-.btn {
-  border-radius: 5rem;
-  font-weight: 700;
-  padding: 0.5rem 2rem;
-  color: $clr-nt-100;
-  background-color: $clr-prim-light;
+.copied {
+  background-color: $clr-prim-dark;
+}
+
+.copied:hover {
+  color: $clr-prim-light;
 }

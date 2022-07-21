@@ -3,6 +3,7 @@ import '../scss/index.scss';
 const shortenerBtn = document.getElementById('shortenerBtn');
 const shortenerInput = document.getElementById('shortenerInput');
 const createdLinksSection = document.getElementById('createdLinks');
+const invalidTag = document.getElementById('invalidTag');
 
 shortenerBtn.addEventListener('click', handleShortener);
 shortenerInput.addEventListener('keydown', (e) => {
@@ -16,13 +17,17 @@ async function handleShortener() {
 	let linkDataJSON = await shortenLink(userLinkInput);
 	if (linkDataJSON.ok) {
 		addLink(linkDataJSON);
-		shortenerInput.value = '';
+		displayValid();
 	} else {
+		displayInvalid();
 		console.log('Invalid URL');
 	}
 }
 
 function handleCopy() {
+	let copyBtn = this;
+	copyBtn.textContent = 'Copied!';
+	copyBtn.classList.add('copied');
 	let linkContainer = this.closest('.link_container');
 	let linkCreated = linkContainer.querySelector('.link--created').href;
 	navigator.clipboard.writeText(linkCreated);
@@ -58,4 +63,16 @@ function addLink(linkDataJSON) {
 	container.append(copyBtn);
 
 	createdLinksSection.append(container);
+}
+
+function displayInvalid() {
+	shortenerInput.classList.add('invalid_input');
+	invalidTag.classList.remove('hidden');
+}
+
+function displayValid() {
+	shortenerInput.classList.remove('invalid_input');
+	shortenerInput.blur();
+	invalidTag.classList.add('hidden');
+	shortenerInput.value = '';
 }
