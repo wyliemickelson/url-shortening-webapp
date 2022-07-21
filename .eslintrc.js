@@ -16,6 +16,6 @@ module.exports = {
 		quotes: ['error', 'single'],
 		semi: ['error', 'always'],
 		'max-len': ['error', { code: 120 }],
-		'no-unused-vars': ['error', { 'vars': 'none', 'args': 'after-used', 'ignoreRestSiblings': false }]
+		'no-unused-vars': ['error', { 'vars': 'local', 'args': 'after-used', 'ignoreRestSiblings': false }]
 	}
 };

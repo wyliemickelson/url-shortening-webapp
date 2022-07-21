@@ -14,7 +14,8 @@
 
   .header .hero,
   .main .shortener,
-  .main .stat_content {
+  .main .stat_content,
+  .created-links {
     max-width: 1000px;
     margin-inline: auto;
   }
@@ -60,6 +61,16 @@
   .main {
     .card + .card {
       margin-top: 0;
+    }
+
+    .link_container {
+      flex-direction: row;
+      justify-content: space-between;
+
+      button {
+        margin-top: 0.75rem;
+        max-width: 150px;
+      }
     }
 
     .shortener {

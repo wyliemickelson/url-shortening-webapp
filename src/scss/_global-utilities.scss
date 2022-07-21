@@ -38,6 +38,10 @@ button:hover {
   color: $clr-prim-dark;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   color: $clr-prim-light;
   cursor: pointer;
