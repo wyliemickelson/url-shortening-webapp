@@ -4,8 +4,6 @@
   margin-top: 2rem;
   margin-bottom: 7rem;
 
-
-
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -39,6 +37,61 @@
 
   .navbar_ham {
     width: 1.5rem;
+  }
+
+  .nav_mobile {
+    background-color: $clr-prim-dark;
+    position: absolute;
+    top: 5rem;
+    width: 90%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+
+    * {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mobile_links {
+      border-bottom: 1px solid rgba(201, 120, 255, 0.24);
+      gap: 1rem;
+      padding: 1rem 0;
+
+      a {
+        color: $clr-nt-100;
+        font-size: 1rem;
+      }
+
+      a:hover {
+        color: $clr-prim-light;
+      }
+    }
+
+    .mobile_account {
+      gap: 0.5rem;
+      padding: 1rem 0;
+      align-items: center;
+      justify-content: center;
+
+      .btn--login:hover {
+        color: $clr-prim-light;
+        filter: brightness(100%);
+      }
+    }
+
+    button {
+      font-size: 1rem;
+    }
+
+    .btn--login {
+      background-color: $clr-prim-dark;
+      color: $clr-nt-100;
+    }
+  }
+
+  .navbar_ham:hover {
+    background-color: initial;
   }
 
   .hero {

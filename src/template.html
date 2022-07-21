@@ -32,7 +32,20 @@
           <button class="btn">Sign Up</button>
         </div>
 
-        <button class="navbar_ham">
+        <div id="navMobile" class="nav_mobile hidden">
+          <div class="mobile_links">
+            <a>Features</a>
+            <a>Pricing</a>
+            <a>Resources</a>
+          </div>
+
+          <div class="mobile_account">
+            <button class="btn btn--login">Login</button>
+            <button class="btn">Sign Up</button>
+          </div>
+        </div>
+
+        <button id="hamBtn" class="navbar_ham">
           <img src="images/icon-bars-solid.svg" />
         </button>
       </nav>
@@ -52,17 +65,16 @@
 
     <main class="main bg-almost-white middle">
       <section class="shortener">
-          <input
-            id="shortenerInput"
-            type="text"
-            placeholder="Shorten a link here..."
-          />
+        <input
+          id="shortenerInput"
+          type="text"
+          placeholder="Shorten a link here..."
+        />
         <button id="shortenerBtn" class="btn">Shorten it!</button>
         <p id="invalidTag" class="invalid_text hidden">Invalid URL</p>
       </section>
 
-      <section id="createdLinks" class="created-links">
-      </section>
+      <section id="createdLinks" class="created-links"></section>
 
       <div class="main_header">
         <h2>Advanced Statistics</h2>

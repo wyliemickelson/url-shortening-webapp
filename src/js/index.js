@@ -4,6 +4,10 @@ const shortenerBtn = document.getElementById('shortenerBtn');
 const shortenerInput = document.getElementById('shortenerInput');
 const createdLinksSection = document.getElementById('createdLinks');
 const invalidTag = document.getElementById('invalidTag');
+const hamBtn = document.getElementById('hamBtn');
+const navMobile = document.getElementById('navMobile');
+
+hamBtn.addEventListener('click', handleHamBtn);
 
 shortenerBtn.addEventListener('click', handleShortener);
 shortenerInput.addEventListener('keydown', (e) => {
@@ -11,6 +15,10 @@ shortenerInput.addEventListener('keydown', (e) => {
 		handleShortener();
 	}
 });
+
+function handleHamBtn() {
+	navMobile.classList.toggle('hidden');
+}
 
 async function handleShortener() {
 	const userLinkInput = shortenerInput.value;
